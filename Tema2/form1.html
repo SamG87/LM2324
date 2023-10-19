@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <form action="form1.php">
+        <fieldset>
+            <legend>Rellenar</legend>
+            <input type="radio" name="idioma" id="Ingles" value="Ingles">Ingles <br>
+            <input type="radio" name="idioma" id="Aleman" value="Aleman">Aleman <br>
+            <input type="radio" name="idioma" id="Frances" value="Frances">Frances <br>
+            <select name="Conector" id="Conector">
+                <option value="usb">USB</option>
+                <option value="paralelo">Paralelo</option>
+                <option value="ps2">PS2</option>
+            </select><br>
+            <label for="nombre">Nombre</label><br>
+            <input type="text" name="nombre" id="nombre"><br>
+            <label for="apellido">Apellido</label><br>
+            <input type="text" name="apellido" id="apellido">
+        </fieldset>
+        <fieldset>
+            <legend>Indique sus preferencias</legend>
+            <label for="sexo">Sexo</label><br>
+            <select multiple name="sexo" id="sexo">
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </selec>
+        </fieldset>
+    </form>
+</body>
+</html>
