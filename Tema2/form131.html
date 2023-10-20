@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario1.3.1</title>
+</head>
+<body>
+    <form action="form3.php" method="post">
+        <h1>FORMULARIO DE PAGO</h1><p>(Los campos obligatorios se han marcado con<strong>*</strong>).</p>
+        <section><fieldset>
+          <legend><h2>Informaión de contacto</h2></legend>
+          <fieldset>
+            <legend>Profesión</legend>
+            <label><input type="radio" name="profesion" value="Profesor/a" />Profesor</label><br />
+            <label><input type="radio" name="profesion" value="Estudiante" />Estudiante</label><br />
+            <label><input type="radio" name="profesion" value="Otro" />Otro</label> <br />
+          </fieldset>
+          <fieldset>
+            <legend>Tratamiento</legend>
+            <label><input type="radio" name="Tratamiento" value="Sr/Sra" />Sr/Sra</label><br />
+            <label><input type="radio" name="Tratamiento" value="Dr/Dra" />Dr/Dra</label><br />
+            <label><input type="radio" name="Tratamiento" value="Otro" />Otro</label> <br />
+          </fieldset>
+          <label>Nombre: *</label><br>
+          <input type="text" name="nombre" required><br>
+          <label>Correo: *</label><br>
+          <label>Número de telefono: *</label><br>
+          <input type="tel" name="telefono" id="telefono"><br>
+          <input type="email" name="correo" required>
+          <p><label>Contraseña: <input type="password" name="Contraseña" required /> *</label></p>
+        </fieldset></section>
+        <section><fieldset>
+          <legend><h2>Payment information</h2></legend>
+          <p><label>Card type:
+            <select name="card_type">
+              <option value="visa">Visa</option>
+              <option value="mc">Mastercard</option>
+              <option value="amex">American Express</option>
+            </select>
+          </label></p>
+          <p><label>Card number: <input type="tel" name="card_number" required /> *
+          </label></p>
+          <p><label>Expiration date: <input type="date" name="expiration" required /> *
+          </label></p>
+        </fieldset></section>
+        <p><button type="submit">Validate the payment</button></p>
+      </form>
+</body>
+</html>
