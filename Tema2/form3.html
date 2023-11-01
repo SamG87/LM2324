@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario3</title>
+</head>
+<body>
+    <form action="form3.php" method="post">
+        <fieldset>
+            <legend>Preferencias</legend>
+            <select multiple name="velocidad" id="velocidad">
+                <option value="100Mbits">100 Mbits</option>
+                <option value="1000Mbits">1000 Mbits</option>
+            </select><br>
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni"><br>
+            <label for="dni">Apellido</label>
+            <input type="text" name="apellido" id="apellido"><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email"><br><br>
+            <label for="color">Elija un color</label>
+            <input type="color" name="color" id="color"><br>
+            <textarea placeholder="Por favor, escriba aquí" name="cuadro" id="cuadro" cols="30" rows="10"></textarea><br>
+            <input type="checkbox" name="amd" id="amd">AMD <br>
+            <input type="checkbox" name="intel5" id="intel5">Intel i5 <br>
+            <input type="checkbox" name="intel7" id="intel7">Intel i7 <br><br>
+            <label for="hora">Elija una hora</label>
+            <input type="time" name="hora" id="hora"><br>
+            <input type="radio" name="2g" id="2g">2G <br>
+            <input type="radio" name="3g" id="3g">3G <br>
+            <input type="radio" name="4g" id="4g">4G
+        </fieldset>
+    </form>
+</body>
+</html>
