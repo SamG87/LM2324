@@ -1,27 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
-
-body {
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    box-sizing: border-box;
+}
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
     background-color: #970043;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-#derecha {
+header{
+    background-color: #ffd100;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    padding: 1px;
+}
+footer {
+    background-color: #ffd100;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+}
+main {
+    background-color: #f2f2f2;
+    width: 60%;
+    padding: 10px;
+}
+.nodo {
+    width: 100%;
+}
+.centro {
+    border-radius: 10px;
+    margin: auto;
+}
+div {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
 }
-img{
-    display:block;
-    margin:auto;
-    }
-    #izquierda {
+p {
+    text-align: left;
+}
+aside {
+    width: 20%;
+    margin: auto;
+}
+main:hover {
+    background-color: #970043;
+    color: #f2f2f2;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+p a {
+    text-decoration: none;
+    color: #ffd100;
+    cursor: wait;
+}
+p:first-letter {
+    font-weight: bold;
+    font-size: large;
+}
+@media only screen and (max-width: 768px) {
+    div {
         display: flex;
-        justify-content: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
     }
-    #centro {
-      
+    main {
+        width: 100%;
     }
-    main{
-        background-color: #f2f2f2;
+    aside {
+        width: 100%;
+        line-height: normal;
     }
-    .contenedor{
-        display: flex;
+    .centro {
+        width: 100%;
     }
+}
