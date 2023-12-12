@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/century-gothic-paneuropean');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Century Gothic Paneuropean", Arial, Helvetica,sans-serif;
+    min-height: 100vh;
+}
+header {
+    width: 100%;
+    background-color: darkgrey;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    margin: 20;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+footer {
+    background-color: darkgoldenrod;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20;
+    border: 2px solid whitesmoke;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: white; 
+}
+nav {
+    width: 20%;
+    background-color: darkcyan;
+    padding: 20px;
+    margin: 20;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+}
+nav a:hover {
+    cursor: progress;
+}
+nav p {
+    padding: 0.5em 1em;
+}
+hr {
+    width: 80%;
+}
+section {
+    width: 80%;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 20px;
+    margin: 20;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+}
+img {
+    float: left;
+    margin-top: 30px;
+    margin-right: 30px;
+    border-radius: 2vh;
+    border: 5px solid goldenrod;
+    max-width: 100%;
+}
+.principal::first-letter {
+    font-size: 200%;
+    color: darkgray;
+}
+
+@media only screen and (max-width: 640px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+}
+
+@media print {
+    * {
+        background-color: white;
+    }
+
+    section {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+}
+
