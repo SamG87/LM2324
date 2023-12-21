@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <h1>Calc</h1>
+    <label for="">Primer numero:</label>
+    <input type="text" id="usuario">
+    <label for="">Segundo numero</label>
+    <input type="text" id="password">
+    <button onclick="suma()">Suma</button>
+    <p id="resultado"></p>
+    <script>
+        function suma(){
+            var usuario = parseInt(document.getElementById("usuario").value);
+            var contrasena = parseInt(document.getElementById("password").value);
+            var suma;
+            suma = usuario + contrasena;
+            document.getElementById("resultado").innerHTML = suma;
+        }
+    </script>
+</body>
+</html>
