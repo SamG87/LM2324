@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>valida campos</title>
+    <title>Formulario</title>
     <script src="validar.js"></script>
     <style>
         .error{
-            color: red;
+            color:red;
         }
     </style>
 </head>
 <body>
-    
-        <label for="">Nombre</label><input id="nombre" type="text"><span class="error" id="campo1"></span><br>
-        <label for="">Apellido</label><input id="apellido"  type="text"><span class="error" id="campo2"></span><br>
-        <label for="">Mail</label><input id="email"  type="email"><span class="error" id="campo3"></span><br>
-        <label for="">Pasword</label><input id="password"  type="password"><span class="error" id="campo4"></span><br>
-        <label for="">Acepta politica privacidad</label><input value="off" id="politica"  type="checkbox"><span class="error" id="campo5"></span><br>
+        <label for="">Nombre:</label><input id="nombre" type="text"><span class="error" id="campo1"></span><br>
+        <label for="">Apellidos:</label><input id="apellidos" type="text"><span class="error" id="campo2"></span><br>
+        <label for="">Email:</label><input id="email" type="email"><span class="error" id="campo3"></span><br>
+        <label for="">Contraseña:</label><input id="password" type="password" name=""><span class="error" id="campo4"></span><br>
+        <label for="">Contraseña:</label><input id="password2" type="password" name=""><span class="error" id="campo7"></span><br>
+        <label for="">Apellidos:</label><input id="apellidos" type="text"><span class="error" id="campo2"></span><br>
+        <label for="">Acepta política privacidad</label><input id="verificacion" type="checkbox" value="off"><span class="error" id="campo5"></span><br>
         <button onclick="validar(document.getElementsByTagName('input'))">Validar</button>
-    
 </body>
 </html>
